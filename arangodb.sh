@@ -3,12 +3,12 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR
 
-VERSION=2.8.2
+VERSION=2.8.3
 NAME=ArangoDB-$VERSION
 
 if [ ! -d "$DIR/$NAME" ]; then
   # download ArangoDB
-  wget http://www.arangodb.org/travisCI/$NAME.tar.gz
+  wget https://www.arangodb.com/repositories/travisCI/$NAME.tar.gz
   tar zxf $NAME.tar.gz
 fi
 
@@ -22,13 +22,12 @@ mkdir ${TMP_DIR}
 
 ${ARANGODB_DIR}/bin/arangod \
     --database.directory ${TMP_DIR}  \
+    --log.file ${TMP_DIR}/${NAME}.log \
     --configuration none  \
     --server.endpoint tcp://127.0.0.1:8529 \
     --javascript.startup-directory ${ARANGODB_DIR}/js \
-    --javascript.modules-path ${ARANGODB_DIR}/js/server/modules:${ARANGODB_DIR}/js/common/modules \
-    --javascript.action-directory ${ARANGODB_DIR}/js/actions/system  \
+    --javascript.app-path ${TMP_DIR}/${NAME}/apps \
     --database.maximal-journal-size 1048576  \
-    --server.disable-admin-interface true \
     --server.disable-authentication true \
     --javascript.gc-interval 1 &
 
