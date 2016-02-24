@@ -20,7 +20,7 @@
     "aqb": "^2.1.0",
     "arangojs": "^4.3.0",
     "async": "^1.5.0",
-    "lodash": "^3.10.1"
+    "lodash": "^4.5.1"
   },
   "devDependencies": {
     "mocha": "^2.3.3",

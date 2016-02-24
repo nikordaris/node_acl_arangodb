@@ -1,6 +1,11 @@
 #NODE ACL - ArangoDB backend
 This fork adds ArangoDB backend support to [NODE ACL](https://github.com/OptimalBits/node_acl)
 
+##Status
+
+[![BuildStatus](https://secure.travis-ci.org/nharris85/node_acl_arangodb.png?branch=master)](http://travis-ci.org/nharris85/node_acl_arangodb)
+[![Dependency Status](https://david-dm.org/nharris85/node_acl_arangodb.svg)](https://david-dm.org/nharris85/node_acl_arangodb)
+[![devDependency Status](https://david-dm.org/nharris85/node_acl_arangodb/dev-status.svg)](https://david-dm.org/nharris85/node_acl_arangodb#info=devDependencies)
 ##Installation
 
 Using npm:
