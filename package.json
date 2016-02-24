@@ -1,0 +1,33 @@
+{
+  "name": "acl-arangodb",
+  "version": "0.1.0",
+  "description": "ArangoDB backend for acl",
+  "keywords": [
+    "middleware",
+    "acl",
+    "web",
+    "arangojs"
+  ],
+  "repository": "git://github.com/nharris85/node_acl_arangodb.git",
+  "author": "Nick Harris <nharris85@gmail.com>",
+  "homepage": "https://github.com/nharris85/node_acl_arangodb",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "acl": "^0.4.8",
+    "aqb": "^2.1.0",
+    "arangojs": "^4.3.0",
+    "async": "^1.5.0",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "chai": "^3.4.0"
+  },
+  "scripts": {
+    "test": "mocha test/runner.js --reporter spec",
+    "cover": "istanbul cover -- _mocha test/runner.js --reporter spec"
+  }
+}
