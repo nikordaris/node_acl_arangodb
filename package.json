@@ -1,6 +1,6 @@
 {
   "name": "acl-arangodb",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ArangoDB backend for acl",
   "keywords": [
     "middleware",
