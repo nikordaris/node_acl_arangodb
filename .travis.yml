@@ -5,5 +5,5 @@ node_js:
   - 'stable'
 
 before_install:
-    #  - sh setup_arangodb.sh
-  - sh <(curl -s http://arangodb.com/repositories/travisCI/setup_arangodb_2.8.sh)
+  - sh setup_arangodb.sh
+    #  - sh <(curl -s http://arangodb.com/repositories/travisCI/setup_arangodb_2.8.sh)
