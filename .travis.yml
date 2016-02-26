@@ -4,5 +4,5 @@ sudo: false
 node_js:
   - 'stable'
 
-before_install:
-  - sh arangodb.sh
+before_script:
+  - bash <(curl -s http://arangodb.com/repositories/travisCI/setup_arangodb_2.8.sh)
