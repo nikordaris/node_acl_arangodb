@@ -2,7 +2,7 @@
 This fork adds ArangoDB backend support to [NODE ACL](https://github.com/OptimalBits/node_acl)
 
 ##Status
-[![license - MIT](https://img.shields.io/npm/l/acl-arangodb.svg)](https://opensource.org/licenses/MIT)
+[![license - MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![BuildStatus](https://secure.travis-ci.org/nharris85/node_acl_arangodb.png?branch=master)](http://travis-ci.org/nharris85/node_acl_arangodb)
 
 [![NPM status](https://nodei.co/npm/acl-arangodb.png?downloads=true&stars=true)](https://www.npmjs.com/package/acl-arangodb)
