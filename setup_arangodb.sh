@@ -22,11 +22,9 @@ mkdir ${TMP_DIR}
 
 ${ARANGODB_DIR}/bin/arangod \
     --database.directory ${TMP_DIR}  \
-    --log.file ${TMP_DIR}/${NAME}.log \
-    --configuration none  \
+    --log.file ${TMP_DIR}/arangodb.log \
+    --javascript.app-path ${ARANGODB_DIR}/js/apps \
     --server.endpoint tcp://127.0.0.1:8529 \
-    --javascript.startup-directory ${ARANGODB_DIR}/js \
-    --javascript.app-path ${TMP_DIR}/${NAME}/apps \
     --database.maximal-journal-size 1048576  \
     --server.disable-authentication true \
     --javascript.gc-interval 1 &
