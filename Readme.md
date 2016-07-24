@@ -33,7 +33,7 @@ var db = arangojs();
 db.useDatabase('mydb');
 
 // require acl and create ArangoDB backend
-var Acl = require('acl');
+var Acl = require('acl-arangodb');
 // Doesn't set a 'prefix' for collections and separates buckets into multiple collections.
 acl = new Acl(new Acl.arangodbBackend(db));
 
