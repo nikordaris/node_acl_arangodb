@@ -41,7 +41,7 @@ acl = new Acl(new Acl.arangodbBackend(db));
 acl = new Acl(new Acl.arangodbBackend(db, 'acl_', true));
 ```
 ##Testing
-Tested using acl's tests runner against ArangoDB v2.8.3
+Tested using acl's tests runner against ArangoDB v2.8.11
 
 ##Documentation
 See [NODE ACL documentation](https://github.com/OptimalBits/node_acl#documentation)
